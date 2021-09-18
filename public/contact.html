@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Portfolio - Contact</title>
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/default.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./contact.html" class="active">CONTACT</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="le-form">
+            <h3>LE FORM</h3>
+            <form id="le-official-form" action="https://formspree.io/f/xqkwwlle" method="post">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="First Name" placeholder="Your first name" required>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="Last Name" placeholder="Your last name">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="Email" placeholder="Your email" required>
+                <label for="fname">Comment</label>
+                <textarea rows="4"  name="Comment" form="le-official-form" placeholder="Your comment" required></textarea>
+                <label for="satisfaction">Satisfaction</label>
+                <select id="satisfaction" name="Satisfaction">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <input type="submit" value="SUBMIT" id="submit">
+              </form>
+        </div>
+    </section>
+    <footer>
+        <div id="footer-built"></div>
+        <div class="links">
+            <a href="./">HOME</a>
+            <a href="./about.html">ABOUT</a>
+            <a href="./contact.html">CONTACT</a>
+        </div>
+    </footer>
+    <script src="../js/footer.js"></script>
+</body>
+</html>

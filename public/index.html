@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Portfolio</title>
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/default.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./" class="active">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="card">
+            <div onclick="clickableCard()"><img id="profileImage" src="./img/code.png" alt="Github Profile Picture" class="profile-image"></div>
+            <h1 id="profileName" class="deactive-click">Github Profile Name</h1>
+            <h4 id="profileBio" class="deactive-click">Github Profile Bio</h4>
+            <h4 id="profileCompany" class="deactive-click">Github Profile Company</h4>
+        </div>
+        <div class="links">
+            <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Jesurn" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://stackoverflow.com/" target="_blank"><i class="fab fa-stack-overflow"></i></a>
+        </div>
+    </section>
+    <footer>
+        <div id="footer-built"></div>
+        <div class="links">
+            <a href="./">HOME</a>
+            <a href="./about.html">ABOUT</a>
+            <a href="./contact.html">CONTACT</a>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script src="./js/footer.js"></script>
+</body>
+</html>

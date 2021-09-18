@@ -1,0 +1,282 @@
+/*--------------- GOOGLE FONT ---------------*/
+@import url('https://fonts.googleapis.com/css2?family=Glory&display=swap');
+
+/*--------------- DEFAULT STYLING ---------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: #18191A;
+    font-family: 'Glory', sans-serif;
+    margin-top: 76px;
+    margin-bottom: 65px;
+}
+
+/*--------------- HEADER ---------------*/
+nav {
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    height: 56px;
+    background-color: #242526;
+    box-shadow: 0px 2px 2px 0px #1D1E1F, inset 0px -1px 0px 0px #3A3B3C;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    font-size: 18px;
+    display: inline-block;
+    color: white;
+    height: 56px;
+    line-height: 56px;
+    text-decoration: none;
+    padding: 0 50px;
+}
+
+nav a:hover {
+    color: #D90429;
+}
+
+nav .active {
+    color: #D90429;
+    box-shadow: inset #D90429 0 -3px 0 0;
+}
+
+/*--------------- SECTION ---------------*/
+section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+section .error-404 {
+    width: 300px;
+    color: white;
+    background-color: #242526;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+}
+
+section .error-404 h1 {
+    font-size: 50px;
+}
+
+section .card {
+    width: 250px;
+    color: white;
+    background-color: #242526;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+}
+
+section .card .profile-image {
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    cursor: pointer;
+}
+
+section .card h1 {
+    margin: 5px 0;
+}
+
+section .card h1,
+section .card h4 {
+    transition: all 0.5s ease-in-out;
+}
+
+section .deactive-click {
+    visibility: hidden;
+    max-height: 0;
+    opacity: 0;
+}
+
+section .active-click {
+    visibility: visible;
+    opacity: 1;
+}
+
+section .links {
+    margin-top: 10px;
+    font-size: 20px;
+    background-color: #242526;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 10px;
+}
+
+section .error-404:hover,
+section .card:hover,
+section .links:hover,
+section .about:hover,
+section .gmap:hover,
+section .le-form:hover {
+    background-color: #3A3B3C;
+    transition: background-color 0.2s ease-in-out;
+}
+
+section .links a {
+    color: white;
+    margin: 15px;
+}
+
+section .links a:hover {
+    color: #D90429;
+}
+
+section .about {
+    width: 680px;
+    color: white;
+    background-color: #242526;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    font-size: 16px;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-bottom: 10px;
+}
+
+section .about p + p {
+    margin-top: 15px;
+}
+
+section .gmap,
+section .le-form {
+    width: 680px;
+    color: white;
+    background-color: #242526;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+}
+
+section .about h3,
+section .gmap h3,
+section .le-form h3 {
+    margin-bottom: 10px;
+}
+
+section .gmap-btns {
+    display: flex;
+    margin-top: 10px;
+}
+
+section .gmap-prev,
+section .gmap-next,
+section .le-form input[type=submit] {
+    width: 200px;
+    height: 35px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+section .gmap-prev {
+    margin-right: 250px;
+}
+
+section .gmap-btn-activated {
+    background-color: #D90429;
+}
+
+section .gmap-btn-activated:hover,
+section .le-form input[type=submit]:hover {
+    background-color: #b41530;
+}
+
+section .gmap-btn-activated:active,
+section .le-form input[type=submit]:active {
+    background-color: #8f1025;
+}
+
+section .gmap-btn-disabled {
+    background-color: #e4526a;
+}
+
+section .le-form input[type=text],
+section .le-form input[type=email],
+section .le-form textarea,
+section .le-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Glory', sans-serif;
+}
+
+section ::placeholder {
+    color: grey;
+    font-family: 'Glory', sans-serif;
+    font-size: 14px;
+}
+
+section .le-form input[type=submit] {
+    width: 100%;
+    background-color: #D90429;
+}
+
+form:invalid>#submit {
+    background-color: #e4526a;
+    pointer-events: none;
+}
+
+/*--------------- FOOTER ---------------*/
+footer {
+    height: 45px;
+    line-height: 45px;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    overflow: hidden;
+}
+
+footer div {
+    display: inline-block;
+}
+
+footer .links {
+    float: right;
+}
+
+footer .links a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .links a:hover {
+    color: #D90429;
+}
+
+footer .links a + a {
+    padding-left: 5px
+}
